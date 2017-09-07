@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="标题"
+        android:textColor="#333333"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/textView_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提醒时间"
+        android:layout_gravity="right"
+        android:textSize="14sp"/>
+</LinearLayout>

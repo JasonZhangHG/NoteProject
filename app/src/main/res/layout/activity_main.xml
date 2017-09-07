@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 添加按钮 -->
+    <Button
+        android:id="@+id/button_main_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clickView"
+        android:text="添加" />
+
+    <!-- 文章列表，用于显示所有备忘录 -->
+    <ListView
+        android:id="@+id/listView_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/button_main_add"/>
+
+    <TextView
+        android:id="@+id/textView_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="暂无数据!"/>
+
+</RelativeLayout>

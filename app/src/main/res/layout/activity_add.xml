@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+    <!-- 标题 -->
+    <EditText
+        android:id="@+id/editText_add_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入标题"
+        android:textColor="#0000ff"/>
+    <!-- 闹钟时间 -->
+    <EditText
+        android:id="@+id/editText_add_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_add_title"
+        android:editable="false"
+        android:hint="time"
+        android:textColor="#0000ff" />
+    <!-- 备忘录内容 -->
+    <view
+        android:id="@+id/noteEditText_add_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/editText_add_time"
+        android:layout_above="@+id/relativeLayout1"
+        android:layout_marginTop="10dp"
+        class="com.steven.android_notelog.customview.NoteEditText"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:scrollbars="vertical"
+        android:hint="请输入内容"
+        android:textColor="#0000ff" />
+    <!-- 底部按钮 -->
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" >
+        <!-- 保存按钮 -->
+        <Button
+            android:id="@+id/button_add_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickView"
+            android:text="保  存" />
+        <!-- 取消按钮 -->
+        <Button
+            android:id="@+id/button_add_cacel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/button_add_save"
+            android:onClick="clickView"
+            android:text="取  消" />
+    </RelativeLayout>
+</RelativeLayout>
